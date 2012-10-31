@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+    <a href="/novo/">Adicionar</a>
+    <ul>
+        {% for artigo in lista_artigos %}
+            <li>
+                <a href="/artigo/{{ artigo.id }}">
+                    {{ artigo.publicacao|date:'d/m/Y'}} - {{ artigo.titulo }}
+                </a>
+            </li>
+        {% empty %}
+            <li>Sem itens na lista</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

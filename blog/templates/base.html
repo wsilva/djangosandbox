@@ -1,0 +1,44 @@
+<html>
+    <head>
+        {% block cabecalho %}
+            <title>DC</title>
+        {% endblock %}
+    </head>
+
+    <body>
+        <div id="header">
+            <div id="logo">
+
+            </div>
+            <div id="titulo">
+                <h1>decompilados</h1>
+            </div>
+        </div>
+        <div id="content">
+            <div id="miolo">
+                {% block corpo %}
+                    <!-- corpo -->
+                {% endblock %}
+            </div>
+            <div id="boxes">
+                <div class="box">
+                    <h2>Caixa 1</h2>
+                    <p>Conteudo do caixa 1</p>
+                </div>
+                <div class="box">
+                    <h2>Caixa 2</h2>
+                    <p>Conteudo do caixa 2</p>
+                </div>
+                <div class="box">
+                    <h2>Caixa 3</h2>
+                    <p>Conteudo do caixa 3</p>
+                </div>
+                <div class="box">
+                    <h2>Caixa 4</h2>
+                    <p>Conteudo do caixa 4</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
